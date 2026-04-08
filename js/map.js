@@ -1,4 +1,4 @@
-const token ="pk.eyJ1IjoicHJpdmFycmVudGlpIiwiYSI6ImNtbm5tbXFubjF5ZWcycXBrcGE1aW45b28ifQ.3s-NA2RSbcxmJKwXZHrrDQ";
+const token ="";
 
 export let currentLocation = {
     lat: null,

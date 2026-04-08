@@ -39,7 +39,7 @@ function displayRuns() {
         let mapPreview = '';
 
         if (run.location.lat && run.location.lat) {
-            const token = "pk.eyJ1IjoicHJpdmFycmVudGlpIiwiYSI6ImNtbm5tbXFubjF5ZWcycXBrcGE1aW45b28ifQ.3s-NA2RSbcxmJKwXZHrrDQ";
+            const token = "";
 
             mapPreview = `
                 <img 
