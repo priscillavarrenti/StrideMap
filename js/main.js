@@ -1,12 +1,13 @@
 import {saveRun, getRuns} from "./storage.js";
 import { loadMap, getUserLocation, currentLocation } from "./map.js";
+import { loadVideos } from "./youtube.js";
 
 const form = document.getElementById('form');
 const runsList = document.getElementById('runs');
 const locateBtn = document.getElementById('locateBtn');
 const mapImg = document.getElementById('map');
 
-
+loadVideos();
 loadMap(mapImg);
 displayRuns();
 
