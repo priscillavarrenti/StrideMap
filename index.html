@@ -6,33 +6,74 @@
         <meta name="author" content="Priscilla Varrenti">
         <meta name="description" content="A web page for my Final Project called StrideMap, Its going to help runners improve their skills and learn more deeply about techniques. This page is going to be using two APIs, MapBox and Youtube API">
         <title>StrideMap</title>
-        
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
-        
         <link rel="stylesheet" href="css/styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
+
     </head>
+
     <body>
-        <h1>StrideMap</h1>
+        <header class="navbar">
+            <div class="logo">StrideMap</div>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="runs.html">Runs</a>
+                <a href="videos.html">Videos</a>
+            </nav>
+        </header>
+        <main>
+            <section class="hero">
+                <img src="Images/chan-reduce.jpg" alt="Runner" class="hero-img">
+                <div class="hero-text">
+                    <h1>Welcome!</h1>
+                    <p>Track your runs, stay motivated and improve your journey!!</p>
+                </div>
+            </section>
 
-        <img id="map" alt="Map view"/>
+            <section class="features">
+                <div class="feature-card">
+                    <h3>Track your Runs</h3>
+                    <p>Log your running sessions and monitor your progress</p>
+                    <a href="runs.html">Open</a>
+                </div>
 
-        <button id="locateBtn">Use My Location</button>
+                <div class="feature-card">
+                    <h3>Explore Routes</h3>
+                    <p>View your route snapshots and saved locations!</p>
+                    <a href="routes.html">Open</a>
+                </div>
 
-        <form id="form">
-            <input type="number" id="distance" placeholder="Distance (km)" required>
-            <input type="number" id="time" placeholder="Time (min)" required>
-            <input type="date" id="date" required>
-            <button type="submit">Save Run</button>
-        </form>
+                <div class="feature-card">
+                    <h3>Running Videos</h3>
+                    <p>Learn from expert coaches,improve your technique and keep motivated</p>
+                    <a href="videos.html">Open</a>
+                </div>
+            </section>
+            <section class="register-section">
+                <h2>Create your StrideMap Account</h2>
+                <form id="registerForm">
+                    <input type="text" id="username" placeholder="Enter your Name" required>
+                    <input type="email" id="email" placeholder="Enter your Email Address" required>
 
-        <ul id="runs"></ul>
+                    <select id="gender" required>
+                        <option value="">Select Gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
 
-        <h2>Running Videos</h2>
-        <div id="videos"></div>
+                    <input type="number" id="age" placeholder="Age" required>
+                    <button type="submit">Register</button>
+                </form>
 
-        <script type="module" src="js/main.js"></script>
+                <p id="registerMessage"></p>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 StrideMap. All rights reserved. Not a real application.</p>
+        </footer>
+
+        <script type="module" src="js/home.js"></script>
+
     </body>
-    <footer>
-        <p>&copy; 2026 StrideMap. All rights reserved. Not a real application.</p>
-    </footer>
 </html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Priscilla Varrenti">
+        <meta name="description" content="A web page for my Final Project called StrideMap, this is the runing traking page, Its going to help runners improve their skills and learn more deeply about their rutines. this page is using a MapBox API.">
+        <title>StrideMap - Runs</title>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Track Your Runs</h1>
+
+            <a href="index.html" class="back-btn">  Home</a>
+
+            <img id="map" alt="Map view">
+
+            <button id="locateBtn">Use My Location</button>
+            
+            <form id="form">
+                <input type="number" id="distance" placeholder="Distance (km)" required>
+                <input type="number" id="time" placeholder="Time (min)" required>
+                <input type="date" id="date" required>
+                <button type="submit">Save Run</button>
+            </form>
+
+            <ul id="runs"></ul>
+        </div>
+
+        <script type="module" src="js/main.js"></script>
+    </body>
+    <footer>
+        <p>&copy; 2026 StrideMap. All rights reserved. Not a real application.</p>
+    </footer>
+</html>

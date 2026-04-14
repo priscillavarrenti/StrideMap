@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Priscilla Varrenti">
+        <meta name="description" content="A web page for my Final Project called StrideMap, this is the runing traking page, Its going to help runners improve their skills and learn more deeply about how to do certain things like Stretching or just find some motivation. this page is using a Youtube API.">
+
+        <title>StrideMap - Videos</title>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Running Videos </h1>
+
+            <a href="index.html" class="back-btn"> Home</a>
+
+            <div id="videos">
+                <p>test content appears here</p>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2026 StrideMap. All rights reserved. Not a real application.</p>
+        </footer>
+
+        <script type="module">
+            import { loadVideos } from "./js/youtube.js";
+            loadVideos();
+        </script>
+    </body>
+</html>
